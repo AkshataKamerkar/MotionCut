@@ -129,7 +129,7 @@ A) Filters results based on a condition
 B) Fetches related objects with a single query
 C) Aggregates query results
 D) Performs case-insensitive searches        
-    ''')
+Enter your choice : ''')
 
         score = evaluate(q4,'B',score)
 
@@ -145,7 +145,7 @@ B) Controlling URL routing
 C) Implementing web sockets
 D) Executing certain actions based on sender signals        
         
-        ''')
+Enter your choice : ''')
 
         score = evaluate(q5,'D',score)
 
@@ -247,14 +247,14 @@ Enter your choice : ''')
         intro_statement('Data Analysis')
 
         q1 = input('''
-        Question: What is the purpose of exploratory data analysis (EDA) in data analysis?
-        Options:
-        A) To clean and preprocess raw data
-        B) To visually analyze and summarize data characteristics
-        C) To build machine learning models
-        D) To perform statistical hypothesis testing
+Question: What is the purpose of exploratory data analysis (EDA) in data analysis?
+Options:
+A) To clean and preprocess raw data
+B) To visually analyze and summarize data characteristics
+C) To build machine learning models
+D) To perform statistical hypothesis testing
 
-        Enter your choice : ''')
+Enter your choice : ''')
 
         score = evaluate(q1, 'B', score)
 
@@ -263,14 +263,14 @@ Enter your choice : ''')
 
 
         q2 = input('''
-        Question: What does the term "Outlier" refer to in data analysis?
-        Options:
-        A) Data points that do not fit the expected pattern or distribution
-        B) The center point in a dataset
-        C) Values that fall within the interquartile range
-        D) Extreme values that always indicate errors
+Question: What does the term "Outlier" refer to in data analysis?
+Options:
+A) Data points that do not fit the expected pattern or distribution
+B) The center point in a dataset
+C) Values that fall within the interquartile range
+D) Extreme values that always indicate errors
 
-        Enter your choice : ''')
+Enter your choice : ''')
 
         score = evaluate(q2, 'A', score)
 
@@ -279,14 +279,14 @@ Enter your choice : ''')
 
 
         q3 = input('''
-        Question: What is the purpose of correlation analysis in data analysis?
-        Options:
-        A) To determine causation between variables
-        B) To identify relationships and strength of associations between variables
-        C) To perform clustering of similar data points
-        D) To detect anomalies in the dataset
+Question: What is the purpose of correlation analysis in data analysis?
+Options:
+A) To determine causation between variables
+B) To identify relationships and strength of associations between variables
+C) To perform clustering of similar data points
+D) To detect anomalies in the dataset
 
-        Enter your choice : ''')
+Enter your choice : ''')
 
         score = evaluate(q3, 'B', score)
 
@@ -295,14 +295,14 @@ Enter your choice : ''')
 
 
         q4 = input('''
-        Question: What does the term "P-value" represent in statistical analysis?
-        Options:
-        A) The probability that the null hypothesis is true
-        B) The significance level of the test
-        C) The range of confidence intervals
-        D) The number of variables in a regression model
+Question: What does the term "P-value" represent in statistical analysis?
+Options:
+A) The probability that the null hypothesis is true
+B) The significance level of the test
+C) The range of confidence intervals
+D) The number of variables in a regression model
 
-        Enter your choice : ''')
+Enter your choice : ''')
 
         score = evaluate(q4, 'A', score)
 
@@ -311,14 +311,14 @@ Enter your choice : ''')
 
 
         q5 = input('''
-        Question: What is the purpose of a Boxplot in data analysis?
-        Options:
-        A) To visualize distributions of a single variable
-        B) To compare distributions of multiple variables
-        C) To detect outliers in the dataset
-        D) All of the above
+Question: What is the purpose of a Boxplot in data analysis?
+Options:
+A) To visualize distributions of a single variable
+B) To compare distributions of multiple variables
+C) To detect outliers in the dataset
+D) All of the above
 
-        Enter your choice : ''')
+Enter your choice : ''')
 
         score = evaluate(q5, 'D', score)
 
