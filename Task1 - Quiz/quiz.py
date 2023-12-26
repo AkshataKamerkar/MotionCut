@@ -2,6 +2,9 @@
 def intro_statement(choice):
 
     print(f"Welcome to the {choice} Quiz !!!")
+
+    print('*'*150)
+    print('INSTRUCTIONS - ')
     print("You'll be given 5 multiple-choice questions, each worth 20 marks")
     print(f"Depending on your final score, your proficiency level in {choice} will be identified.")
     print("""
@@ -12,7 +15,7 @@ Evaluation Criteria -
 81-100: Expert
 """)
     print('For each incorrect answer, a penalty of 10 marks will be deducted from your score.')
-
+    print('*' * 150)
 
 # Main Global Score
 score = 0
@@ -86,6 +89,7 @@ Enter your choice : ''')
         score = evaluate(q1,'B',score)
 
         print('Feedback : A Django superuser has elevated access, controlling administrative tasks and accessing all parts of a project.')
+        print('-'*150)
 
         q2 = input('''
 Question: What is the purpose of Django's middleware?
@@ -100,6 +104,7 @@ Enter your choice : ''')
         score = evaluate(q2,'D',score)
 
         print("Feedback : Django's middleware manages global request-response cycles, allowing for processing before reaching views.")
+        print('-'*150)
 
         q3 = input('''
 Question: In Django, what does the @classmethod decorator do in a model?
@@ -114,6 +119,7 @@ Enter your choice : ''')
         score = evaluate(q3,'A',score)
 
         print("Feedback : The @classmethod decorator in Django models allows the creation of methods accessible by the class itself, not just instances.")
+        print('-'*150)
 
 
         q4 = input('''
@@ -128,6 +134,7 @@ D) Performs case-insensitive searches
         score = evaluate(q4,'B',score)
 
         print("Feedback : select_related() fetches related objects in a single query to reduce database hits when accessing related objects.")
+        print('-'*150)
 
 
         q5 = input('''
@@ -143,6 +150,7 @@ D) Executing certain actions based on sender signals
         score = evaluate(q5,'D',score)
 
         print("Feedback : Django's signals allow decoupled applications to get notified when certain actions occur elsewhere in the codebase, often used for triggering actions on model events.")
+        print('-'*150)
 
         # Giving the Final Evaluation for Django
         final_evaluation(score)
@@ -167,8 +175,8 @@ Enter your choice : ''')
 
         score = evaluate(q1, 'A', score)
 
-        print(
-            'Feedback : Ensemble methods combine multiple models to improve prediction accuracy and robustness.')
+        print('Feedback : Ensemble methods combine multiple models to improve prediction accuracy and robustness.')
+        print('-' * 150)
 
         q2 = input('''
 Question: What is the purpose of regularization in machine learning?
@@ -182,8 +190,8 @@ Enter your choice : ''')
 
         score = evaluate(q2, 'A', score)
 
-        print(
-            "Feedback : Regularization techniques help prevent overfitting by penalizing overly complex models.")
+        print("Feedback : Regularization techniques help prevent overfitting by penalizing overly complex models.")
+        print('-' * 150)
 
         q3 = input('''
 Question: What is the difference between supervised and unsupervised learning?
@@ -197,8 +205,8 @@ Enter your choice : ''')
 
         score = evaluate(q3, 'A', score)
 
-        print(
-            "Feedback : Supervised learning relies on labeled data with known outcomes, while unsupervised learning deals with unlabeled data to discover patterns.")
+        print("Feedback : Supervised learning relies on labeled data with known outcomes, while unsupervised learning deals with unlabeled data to discover patterns.")
+        print('-' * 150)
 
         q4 = input('''
 Question: What is the purpose of the activation function in a neural network?
@@ -212,8 +220,8 @@ Enter your choice : ''')
 
         score = evaluate(q4, 'C', score)
 
-        print(
-            "Feedback : Activation functions introduce non-linear transformations, enabling neural networks to model complex relationships between inputs and outputs.")
+        print("Feedback : Activation functions introduce non-linear transformations, enabling neural networks to model complex relationships between inputs and outputs.")
+        print('-' * 150)
 
         q5 = input('''
 Question: Explain the concept of bias-variance tradeoff in machine learning.
@@ -227,8 +235,8 @@ Enter your choice : ''')
 
         score = evaluate(q5, 'B', score)
 
-        print(
-            "Feedback : The bias-variance tradeoff deals with the tradeoff between model simplicity (bias) and ability to capture patterns (variance) for optimal generalization to new data.")
+        print("Feedback : The bias-variance tradeoff deals with the tradeoff between model simplicity (bias) and ability to capture patterns (variance) for optimal generalization to new data.")
+        print('-' * 150)
 
         # Giving the Final Evaluation for Machine Learning
         final_evaluation(score)
@@ -250,8 +258,9 @@ Enter your choice : ''')
 
         score = evaluate(q1, 'B', score)
 
-        print(
-            'Feedback: Exploratory data analysis aims to visually analyze and summarize data characteristics to gain insights before modeling.')
+        print('Feedback: Exploratory data analysis aims to visually analyze and summarize data characteristics to gain insights before modeling.')
+        print('-' * 150)
+
 
         q2 = input('''
         Question: What does the term "Outlier" refer to in data analysis?
@@ -265,8 +274,9 @@ Enter your choice : ''')
 
         score = evaluate(q2, 'A', score)
 
-        print(
-            "Feedback: Outliers are data points that deviate significantly from other observations in a dataset, often indicating anomalies or errors.")
+        print("Feedback: Outliers are data points that deviate significantly from other observations in a dataset, often indicating anomalies or errors.")
+        print('-' * 150)
+
 
         q3 = input('''
         Question: What is the purpose of correlation analysis in data analysis?
@@ -280,8 +290,9 @@ Enter your choice : ''')
 
         score = evaluate(q3, 'B', score)
 
-        print(
-            "Feedback: Correlation analysis measures the strength and direction of relationships between variables in a dataset.")
+        print("Feedback: Correlation analysis measures the strength and direction of relationships between variables in a dataset.")
+        print('-' * 150)
+
 
         q4 = input('''
         Question: What does the term "P-value" represent in statistical analysis?
@@ -295,8 +306,9 @@ Enter your choice : ''')
 
         score = evaluate(q4, 'A', score)
 
-        print(
-            "Feedback: The P-value represents the probability of observing the data given that the null hypothesis is true in statistical hypothesis testing.")
+        print("Feedback: The P-value represents the probability of observing the data given that the null hypothesis is true in statistical hypothesis testing.")
+        print('-' * 150)
+
 
         q5 = input('''
         Question: What is the purpose of a Boxplot in data analysis?
@@ -310,8 +322,9 @@ Enter your choice : ''')
 
         score = evaluate(q5, 'D', score)
 
-        print(
-            "Feedback: Boxplots visualize distributions of variables, compare distributions between groups, and identify outliers.")
+        print("Feedback: Boxplots visualize distributions of variables, compare distributions between groups, and identify outliers.")
+        print('-' * 150)
+
 
         # Giving the Final Evaluation for Data Analysis
         final_evaluation(score)
