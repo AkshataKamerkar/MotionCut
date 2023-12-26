@@ -1,4 +1,4 @@
-
+# Prints an Introductory statement for each domain choice of the quiz
 def intro_statement(choice):
 
     print(f"Welcome to the {choice} Quiz !!!")
@@ -14,7 +14,9 @@ Evaluation Criteria -
     print('For each incorrect answer, a penalty of 10 marks will be deducted from your score.')
 
 
+# Main Global Score
 score = 0
+# Evaluate each answer and accordingly calculates the score
 def evaluate(q,choice,score):
 
     if q.upper() == choice:
@@ -27,7 +29,7 @@ def evaluate(q,choice,score):
 
     return score
 
-
+# Decides the category of users expertise based on the final score
 def final_evaluation(score):
 
     print(f'Your Final Score is {score} ')
@@ -45,12 +47,13 @@ def final_evaluation(score):
         print("Comment : Job Ready - Well Done!")
 
 
+# Program starts from here
 print("*" * 32)
 print("\tWELCOME TO THE QPREP !!!     ")
 print("*" * 32)
 
 while(1):
-
+    # Taking domain input from the user and acting accordingly
     inp = int(input('''
 Select a Topic for the Quiz - 
 0. Exit 
@@ -59,6 +62,7 @@ Select a Topic for the Quiz -
 3. Data Analysis 
 
 Enter your choice : '''))
+
 
     if inp == 0:
 
@@ -140,6 +144,7 @@ D) Executing certain actions based on sender signals
 
         print("Feedback : Django's signals allow decoupled applications to get notified when certain actions occur elsewhere in the codebase, often used for triggering actions on model events.")
 
+        # Giving the Final Evaluation for Django
         final_evaluation(score)
 
 
@@ -225,6 +230,7 @@ Enter your choice : ''')
         print(
             "Feedback : The bias-variance tradeoff deals with the tradeoff between model simplicity (bias) and ability to capture patterns (variance) for optimal generalization to new data.")
 
+        # Giving the Final Evaluation for Machine Learning
         final_evaluation(score)
 
 
@@ -307,6 +313,7 @@ Enter your choice : ''')
         print(
             "Feedback: Boxplots visualize distributions of variables, compare distributions between groups, and identify outliers.")
 
+        # Giving the Final Evaluation for Data Analysis
         final_evaluation(score)
 
 
