@@ -1,0 +1,62 @@
+Design Choices:
+
+The design for this Word Counter revolves around providing a user interface to input text and obtain the word count from it. The application features two themes -
+Default and Dark - for user customization. It includes an input area where users can enter text, buttons for word counting and text clearing, and a label displaying the
+word count. Users can switch between themes and interact with the application seamlessly.
+
+User Interface Structure:
+
+    - Title Label: Displays "Word Counter" as the application title.
+    - Input Label: Prompts users to enter a sentence or paragraph.
+    - Text Entry: Provides a text area for users to input text.
+    - Count Button: Triggers the word count function.
+    - Clear Button: Clears the text entry area.
+    - Result Label: Displays the word count result.
+
+
+Functionalities:
+
+    1. Word Counting:
+        - Users input text into the text entry area.
+        - Clicking the "Count Words" button triggers the word counting function.
+        - The result label updates to show the word count.
+
+    2. Text Clearing:
+        - Clicking the "Clear Text" button removes all text from the entry area.
+        - The result label resets to show a word count of 0.
+
+    3. Theme Selection:
+        - Users can select between "Default" and "Dark" themes.
+        - Theme changes alter the entire application's color scheme.
+
+
+Challenges Faced:
+
+    - Designing Theme Changes: Implementing theme changes smoothly without compromising user experience.
+    - Maintaining Readability: Ensuring text remains legible across different themes.
+    - User Interaction: Facilitating easy text input, especially for large paragraphs.
+
+
+Potential Enhancements:
+
+    1. Graphical User Interface (GUI):
+        - Introduce graphical elements for a more engaging user experience.
+        - Enhance aesthetics and interactivity using icons or visual cues.
+
+    2. User Preferences:
+        - Allow users to customize font styles, sizes, and other visual aspects.
+        - Offer additional theme options or customization features.
+
+    3. Text Analysis Features:
+        - Expand functionality to include additional text analysis tools (e.g., character count, sentence count).
+        - Implement language detection or readability analysis.
+
+    4. Performance Optimization:
+        - Improve efficiency for handling larger text inputs.
+        - Optimize theme change processes for smoother transitions.
+
+Conclusion:
+
+    The current Word Counter application provides a straightforward interface for counting words within provided text. Enhancements focusing on GUI improvements,
+    additional text analysis features, and performance optimizations could elevate user experience and utility.
+
