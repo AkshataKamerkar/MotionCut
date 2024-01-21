@@ -1,4 +1,4 @@
-Design Choices:
+Design Choices :
 
 The design choices for this quiz system include structuring it around multiple-choice questions, with each question offering four options (A, B, C, D).
 There are 5 questions per quiz, providing coverage across various aspects of the chosen topic. Immediate feedback is given after each question, detailing both
